@@ -1,0 +1,54 @@
+user@user MINGW64 ~ (main)
+$ cd ~/Desktop
+
+user@user MINGW64 ~/Desktop (main)
+$ mkdir git_challenge
+
+user@user MINGW64 ~/Desktop (main)
+$ cd git_challenge
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/user/Desktop/git_challenge/.git/
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "最初のコミット:hello,world.txtを追加"
+[main (root-commit) 61646e4] 最初のコミット:hello,world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "2回目のコミット:日本語訳の追記"
+On branch main
+nothing to commit, working tree clean
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git log
+commit 61646e49b8c4ce3bd9dea45ce761639c33ce0348 (HEAD -> main)
+Author: michiru260 <michiru260@docomo.ne.jp>
+Date:   Thu Feb 13 21:03:03 2025 +0900
+
+    最初のコミット:hello,world.txtを追加
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "日本語訳の追記"
+[main 0cf28a2] 日本語訳の追記
+ 1 file changed, 3 insertions(+)
+
+user@user MINGW64 ~/Desktop/git_challenge (main)
+$ git log
+commit 0cf28a2eda3d692949f261bd590b7897a065ef6c (HEAD -> main)
+Author: michiru260 <michiru260@docomo.ne.jp>
+Date:   Thu Feb 13 21:09:42 2025 +0900
+
+    日本語訳の追記
+
